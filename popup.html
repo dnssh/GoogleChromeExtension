@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<meta charset=“UTF-8”>
+<html>
+
+<head>
+	<style type="text/css" src="style.css"></style>
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="index.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body{
+			background-image: linear-gradient(to bottom right, yellow, blue);
+		}
+		.cardItem {
+		
+		  height: 30px;
+		  width: 146px;
+		  margin-top: 10px;
+		  marginright: 0px;
+		  padding: 0px;
+		  text-align: center;
+		  transition: all 500ms ease-in-out;
+		  background-color: #eee;
+		}
+		.cardItem:hover {
+		  margin-top: 7px;
+		  cursor: pointer;
+		  box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.99);
+		  transition: all 200ms cubic-bezier(1, 1, 1, 1);
+		  background-color: white
+		}
+		.cardLabel {
+		  
+		  margin-top: 0px;
+		  width: 100%;
+		  font-size: 16px;
+		  display: block;
+		  background-color: lightyellow;
+		}
+	</style>
+</head>
+
+
+<body class="btc-chrome" style="width: 150px;">
+	<h2 style="font-size:23px">Live Rates <button id="clickme" style="border-radius: 5px;width: 25px; height: 20px; background:white"><i class="fa fa-refresh"></i></button></h2>
+	<h3 style="font-size: 15px;"><img src="flags/america.png" style="width: 35px;display: inline-block;"> 1 USD =</h3>
+ <div class="cardItem">
+		<div style="display: inline-block;"><img src="flags/india.png" style="width: 27px;display: inline-block;"></div>
+		<div style="display: inline-block;"><span class="cardLabel" id="inr"></span></div>
+	</div>
+	<div class="cardItem">
+		<div style="display: inline-block;"><img src="flags/eu.png" style="width: 25px;display: inline-block;"></div>
+		<div style="display: inline-block;"><span class="cardLabel" id="eur"></span></div>
+	</div>
+	<div class="cardItem">
+		<div style="display: inline-block;"><img src="flags/uk.png" style="width: 25px;display: inline-block;"></div>
+		<div style="display: inline-block;"><span class="cardLabel" id="gbp"></span></div>
+	</div>
+	<div class="cardItem">
+		<div style="display: inline-block;"><img src="flags/china.png" style="width: 25px;display: inline-block;"></div>
+		<div style="display: inline-block;"><span class="cardLabel" id="cny"></span></div>
+	</div>
+	<div class="cardItem">
+		<div style="display: inline-block;"><img src="flags/australia.png" style="width: 25px;display: inline-block;"></div>
+		<div style="display: inline-block;"><span class="cardLabel" id="aud"></span></div>
+	</div>
+	<div class="cardItem">
+		<div style="display: inline-block;"><img src="flags/canada.png" style="width: 25px;display: inline-block;"></div>
+		<div style="display: inline-block;"><span class="cardLabel" id="cad"></span></div>
+	</div>
+	<div class="cardItem">
+		<div style="display: inline-block;"><img src="flags/france.png" style="width: 25px;display: inline-block;"></div>
+		<div style="display: inline-block;"><span class="cardLabel" id="chf"></span></div>
+	</div>
+	<div class="cardItem">
+		<div style="display: inline-block;"><img src="flags/japan.png" style="width: 25px;display: inline-block;"></div>
+		<div style="display: inline-block;"><span class="cardLabel" id="jpy"></span></div>
+	</div>
+	
+	<div class="cardItem">
+		<div style="display: inline-block;"><img src="flags/sweden.png" style="width: 25px;display: inline-block;"></div>
+		<div style="display: inline-block;"><span class="cardLabel" id="sek"></span></div>
+	</div>
+
+</body>
+</html>
